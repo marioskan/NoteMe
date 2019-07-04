@@ -14,7 +14,7 @@ namespace NoteMe.DAL
     // Update-Database -ConfigurationTypeName DAL.Identity.Migrations.Configuration -TargetMigration:0
     public class NoteContext :DbContext
     {
-        public NoteContext() : base ("NoteContext")
+        public NoteContext() : base ("DefaultConnection")
         {
 
         }

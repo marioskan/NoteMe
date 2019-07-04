@@ -1,9 +1,9 @@
-namespace NoteMe.Migrations
+namespace NoteMe.MigrationsIdenity
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class init3 : DbMigration
+    public partial class Initial : DbMigration
     {
         public override void Up()
         {

@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using NoteMe.DAL;
 using NoteMe.Models;
+using Microsoft.AspNet.Identity;
 
 namespace NoteMe.Controllers
 {
@@ -19,7 +20,11 @@ namespace NoteMe.Controllers
         // GET: Notes
         public ActionResult Index()
         {
-            return View(db.Note.ToList());
+            var username = User.Identity.GetUserName();
+            var notes = db.Note
+                .Where(nts => nts.Name == username)
+                .ToList();
+            return View(notes);
         }
 
         // GET: Notes/Details/5

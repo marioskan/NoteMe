@@ -197,15 +197,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201907031448232_init3.cs" />
-    <Compile Include="Migrations\201907031448232_init3.Designer.cs">
-      <DependentUpon>201907031448232_init3.cs</DependentUpon>
+    <Compile Include="MigrationsIdenity\201907041137349_Initial.cs" />
+    <Compile Include="MigrationsIdenity\201907041137349_Initial.Designer.cs">
+      <DependentUpon>201907041137349_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201907040842191_init.cs" />
-    <Compile Include="Migrations\201907040842191_init.Designer.cs">
-      <DependentUpon>201907040842191_init.cs</DependentUpon>
+    <Compile Include="MigrationsIdenity\Configuration.cs" />
+    <Compile Include="MigrationsNote\201907041136560_Initial.cs" />
+    <Compile Include="MigrationsNote\201907041136560_Initial.Designer.cs">
+      <DependentUpon>201907041136560_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="MigrationsNote\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -214,6 +215,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-lumen.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -225,6 +227,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\NoteMePlz - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -296,11 +299,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201907031448232_init3.resx">
-      <DependentUpon>201907031448232_init3.cs</DependentUpon>
+    <EmbeddedResource Include="MigrationsIdenity\201907041137349_Initial.resx">
+      <DependentUpon>201907041137349_Initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907040842191_init.resx">
-      <DependentUpon>201907040842191_init.cs</DependentUpon>
+    <EmbeddedResource Include="MigrationsNote\201907041136560_Initial.resx">
+      <DependentUpon>201907041136560_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

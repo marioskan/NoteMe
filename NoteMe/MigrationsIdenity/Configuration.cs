@@ -1,4 +1,4 @@
-namespace NoteMe.Migrations
+namespace NoteMe.MigrationsIdenity
 {
     using System;
     using System.Data.Entity;
@@ -10,6 +10,7 @@ namespace NoteMe.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            MigrationsDirectory = @"MigrationsIdenity";
         }
 
         protected override void Seed(NoteMe.Models.ApplicationDbContext context)
