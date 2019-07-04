@@ -1,0 +1,21 @@
+﻿@model NoteMe.Models.Notes
+
+
+<h2>@ViewBag.Message</h2>
+
+@using (Html.BeginForm("Save", "AddNote", FormMethod.Post))
+{
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td>Note:</td>
+                    <td>@Html.TextBoxFor(m=>m.Note)</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Add Note"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+}
